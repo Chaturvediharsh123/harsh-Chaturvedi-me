@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#312e81"/>
+      <stop offset="50%" style="stop-color:#581c87"/>
+      <stop offset="100%" style="stop-color:#164e63"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="160" r="70" fill="url(#glow)" opacity="0.3"/>
+  <circle cx="200" cy="150" r="55" fill="#1e1b4b" stroke="url(#glow)" stroke-width="2"/>
+  <text x="200" y="165" text-anchor="middle" fill="#c7d2fe" font-family="system-ui,sans-serif" font-size="48" font-weight="700">HC</text>
+  <rect x="120" y="230" width="160" height="100" rx="20" fill="#1e1b4b" stroke="url(#glow)" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="200" cy="280" r="8" fill="#6366f1" opacity="0.6"/>
+  <circle cx="170" cy="300" r="5" fill="#8b5cf6" opacity="0.5"/>
+  <circle cx="230" cy="300" r="5" fill="#06b6d4" opacity="0.5"/>
+</svg>
