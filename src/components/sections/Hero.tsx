@@ -122,7 +122,7 @@ export default function Hero() {
             <div className="relative rounded-full border-2 border-indigo-500/30 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 p-1.5 backdrop-blur-sm">
               <div className="relative h-56 w-56 overflow-hidden rounded-full border border-white/10 bg-zinc-900 md:h-72 md:w-72">
                 <Image
-                  src="/profile.svg"
+                  src="/profile.jpeg"
                   alt={portfolioData.name}
                   fill
                   className="object-cover"
