@@ -1,4 +1,4 @@
-import { Github, Heart } from "lucide-react";
+import { Github, } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 
 export default function Footer() {
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           <p className="flex items-center gap-1.5 text-sm text-zinc-500">
-            "He who thinks deeply sees what others overlook."
+            &apos;He who thinks deeply sees what others overlook.&apos;
           </p>
 
           <a
