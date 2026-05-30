@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           <p className="flex items-center gap-1.5 text-sm text-zinc-500">
-            Built with <Heart size={14} className="text-red-400" fill="currentColor" /> using Next.js & AI
+            "He who thinks deeply sees what others overlook."
           </p>
 
           <a

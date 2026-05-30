@@ -85,12 +85,11 @@ export default function Hero() {
             className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
           >
             <a
-              href="/resume.pdf"
-              download
+              href="#projects"
               className="group flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40"
             >
               <Download size={18} className="transition-transform group-hover:-translate-y-0.5" />
-              Download Resume
+              View Projects
             </a>
             <a
               href={portfolioData.github}

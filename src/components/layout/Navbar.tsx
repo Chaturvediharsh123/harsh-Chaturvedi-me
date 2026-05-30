@@ -110,7 +110,7 @@ export default function Navbar() {
             }}
             className="hidden rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40 lg:inline-block"
           >
-            Hire Me
+            Contact Me
           </a>
 
           <button
@@ -160,7 +160,7 @@ export default function Navbar() {
               }}
               className="mt-3 block rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-4 py-3 text-center text-sm font-semibold text-white"
             >
-              Hire Me
+              Contact Me
             </a>
           </motion.div>
         )}
