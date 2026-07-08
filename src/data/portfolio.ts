@@ -77,7 +77,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-1",
       role: "B.Tech Artificial Intelligence Student",
-      organization: "Amity University",
+      organization: "Birla Institute of Technology, Mesra",
       period: "2023 — Present",
       description:
         "Pursuing undergraduate degree in Artificial Intelligence with focus on machine learning, computer vision, agentic AI systems, and intelligent backend development. Building production-grade AI applications through coursework and independent projects.",
