@@ -1,21 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Star } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24 md:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-purple-950/10 to-transparent" />
-
+    <section id="projects" className="relative py-16 md:py-20">
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeader
           label="Projects"
-          title="Featured Work"
-          description="AI applications built from my GitHub repositories — agents, vision, healthcare & more"
+          title="Selected things I’ve made."
+          description="Applied AI projects across public safety, health, accessibility, and developer tools."
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -32,29 +30,23 @@ export default function Projects() {
                 hover
                 className="group flex h-full flex-col overflow-hidden"
               >
-                <div className="relative h-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 opacity-60 transition-opacity group-hover:opacity-100" />
+                <div className="relative h-1.5 bg-[#d7ff69] transition-all group-hover:h-2.5" />
 
                 <div className="flex flex-1 flex-col p-6">
                   <div className="mb-3 flex items-start justify-between gap-3">
-                    <h3 className="text-lg font-semibold text-white transition-colors group-hover:text-indigo-300">
+                    <h3 className="text-lg font-semibold leading-snug text-[#162019] transition-colors group-hover:text-[#0e6b4f]">
                       {project.title}
                     </h3>
                     <div className="flex shrink-0 items-center gap-2">
-                      {project.stars !== undefined && project.stars > 0 && (
-                        <span className="flex items-center gap-1 rounded-full bg-amber-500/10 px-2 py-0.5 text-xs text-amber-400">
-                          <Star size={12} fill="currentColor" />
-                          {project.stars}
-                        </span>
-                      )}
                       {project.language && (
-                        <span className="rounded-full bg-white/5 px-2 py-0.5 text-xs text-zinc-500">
+                        <span className="rounded-full bg-[#f4f1ea] px-2 py-0.5 text-xs text-[#5d655e]">
                           {project.language}
                         </span>
                       )}
                     </div>
                   </div>
 
-                  <p className="mb-5 flex-1 text-sm leading-relaxed text-zinc-400">
+                  <p className="mb-5 flex-1 text-sm leading-relaxed text-[#5d655e]">
                     {project.description}
                   </p>
 
@@ -62,7 +54,7 @@ export default function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="rounded-md border border-white/5 bg-white/5 px-2 py-0.5 text-xs text-zinc-400"
+                        className="rounded-full border border-[#d8d4ca] bg-[#f4f1ea] px-2.5 py-1 text-xs text-[#5d655e]"
                       >
                         {tech}
                       </span>
@@ -73,7 +65,7 @@ export default function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-indigo-400 transition-colors hover:text-indigo-300"
+                    className="inline-flex items-center gap-2 text-sm font-bold text-[#0e6b4f] transition-colors hover:text-[#162019]"
                   >
                     <Github size={16} />
                     View on GitHub

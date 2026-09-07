@@ -19,16 +19,16 @@ export default function SectionHeader({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.5 }}
-      className="mb-12 text-center md:mb-16"
+      className="mb-12 max-w-3xl md:mb-16"
     >
-      <span className="mb-3 inline-block rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-indigo-400">
+      <span className="mb-4 inline-block border-b border-[#0e6b4f] pb-2 text-[11px] font-bold uppercase tracking-[0.22em] text-[#0e6b4f]">
         {label}
       </span>
-      <h2 className="bg-gradient-to-r from-white via-indigo-100 to-purple-200 bg-clip-text text-3xl font-bold text-transparent md:text-4xl lg:text-5xl">
+      <h2 className="display-type text-4xl font-bold leading-[0.92] text-[#162019] md:text-5xl lg:text-6xl">
         {title}
       </h2>
       {description && (
-        <p className="mx-auto mt-4 max-w-2xl text-base text-zinc-400 md:text-lg">
+        <p className="mt-5 max-w-xl text-base leading-relaxed text-[#5d655e] md:text-lg">
           {description}
         </p>
       )}

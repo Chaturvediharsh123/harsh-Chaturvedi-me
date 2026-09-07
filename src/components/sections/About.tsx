@@ -26,12 +26,12 @@ const highlights = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 md:py-32">
+    <section id="about" className="relative py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeader
           label="About Me"
-          title="Crafting Intelligent Systems"
-          description="Turning complex AI concepts into production-ready solutions"
+          title="Curiosity, engineered into useful products."
+          description="I enjoy turning ambitious AI ideas into clear, capable experiences people can actually use."
         />
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -42,25 +42,25 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <GlassCard className="p-8 md:p-10">
-              <p className="text-lg leading-relaxed text-zinc-300">
+              <p className="text-lg leading-relaxed text-[#4e574f]">
                 {portfolioData.about}
               </p>
               <div className="mt-8 grid grid-cols-2 gap-4">
-                <div className="rounded-xl border border-white/5 bg-white/5 p-4 text-center">
-                  <p className="text-2xl font-bold text-indigo-400">25+</p>
-                  <p className="mt-1 text-xs text-zinc-500">GitHub Projects</p>
+                <div className="rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] p-4 text-center">
+                  <p className="text-2xl font-bold text-[#0e6b4f]">25+</p>
+                  <p className="mt-1 text-xs text-[#5d655e]">GitHub Projects</p>
                 </div>
-                <div className="rounded-xl border border-white/5 bg-white/5 p-4 text-center">
-                  <p className="text-2xl font-bold text-purple-400">8.5</p>
-                  <p className="mt-1 text-xs text-zinc-500">CGPA</p>
+                <div className="rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] p-4 text-center">
+                  <p className="text-2xl font-bold text-[#0e6b4f]">8.5</p>
+                  <p className="mt-1 text-xs text-[#5d655e]">CGPA</p>
                 </div>
-                <div className="rounded-xl border border-white/5 bg-white/5 p-4 text-center">
-                  <p className="text-2xl font-bold text-cyan-400">5+</p>
-                  <p className="mt-1 text-xs text-zinc-500">AI Domains</p>
+                <div className="rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] p-4 text-center">
+                  <p className="text-2xl font-bold text-[#0e6b4f]">5+</p>
+                  <p className="mt-1 text-xs text-[#5d655e]">AI Domains</p>
                 </div>
-                <div className="rounded-xl border border-white/5 bg-white/5 p-4 text-center">
-                  <p className="text-2xl font-bold text-emerald-400">2</p>
-                  <p className="mt-1 text-xs text-zinc-500">Hackathon Awards</p>
+                <div className="rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] p-4 text-center">
+                  <p className="text-2xl font-bold text-[#0e6b4f]">2</p>
+                  <p className="mt-1 text-xs text-[#5d655e]">Hackathon Awards</p>
                 </div>
               </div>
             </GlassCard>
@@ -76,12 +76,12 @@ export default function About() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <GlassCard hover className="flex items-start gap-4 p-6">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 text-indigo-400">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#e7efe5] text-[#0e6b4f]">
                     <item.icon size={24} />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">{item.title}</h3>
-                    <p className="mt-1 text-sm text-zinc-400">{item.description}</p>
+                    <h3 className="font-semibold text-[#162019]">{item.title}</h3>
+                    <p className="mt-1 text-sm text-[#5d655e]">{item.description}</p>
                   </div>
                 </GlassCard>
               </motion.div>

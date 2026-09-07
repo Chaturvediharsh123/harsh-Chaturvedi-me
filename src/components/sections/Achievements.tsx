@@ -16,12 +16,12 @@ const iconMap: Record<string, LucideIcon> = {
 
 export default function Achievements() {
   return (
-    <section id="achievements" className="relative py-24 md:py-32">
+    <section id="achievements" className="relative py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeader
           label="Achievements"
-          title="Recognition & Milestones"
-          description="Hackathon awards, academic excellence, and open source contributions"
+          title="A few proud moments."
+          description="Recognition for the work, plus the habits that keep it moving forward."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -37,12 +37,12 @@ export default function Achievements() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
               >
                 <GlassCard hover className="h-full p-6 text-center">
-                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500/30 to-purple-500/30 text-indigo-300">
+                  <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#e7efe5] text-[#0e6b4f]">
                     <Icon size={28} />
                   </div>
-                  <h3 className="font-semibold text-white">{achievement.title}</h3>
+                  <h3 className="font-semibold text-[#162019]">{achievement.title}</h3>
                   {achievement.description && (
-                    <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+                    <p className="mt-2 text-sm leading-relaxed text-[#5d655e]">
                       {achievement.description}
                     </p>
                   )}

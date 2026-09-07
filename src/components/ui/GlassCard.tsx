@@ -15,10 +15,10 @@ export default function GlassCard({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl",
-        "shadow-[0_8px_32px_rgba(0,0,0,0.3)]",
+        "paper-card rounded-[1.35rem] border border-[#d8d4ca] backdrop-blur-sm",
+        "shadow-[0_12px_30px_rgba(22,32,25,0.045)]",
         hover &&
-          "transition-all duration-300 hover:border-indigo-500/30 hover:bg-white/[0.08] hover:shadow-[0_8px_32px_rgba(99,102,241,0.15)]",
+          "transition-all duration-300 hover:-translate-y-1 hover:border-[#0e6b4f]/40 hover:shadow-[0_18px_34px_rgba(22,32,25,0.10)]",
         className
       )}
     >

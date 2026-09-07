@@ -60,7 +60,7 @@ export default function Navbar() {
           className={cn(
             "mx-auto flex max-w-6xl items-center justify-between px-4 transition-all duration-300 md:px-6",
             scrolled
-              ? "rounded-2xl border border-white/10 bg-zinc-950/80 py-3 shadow-lg backdrop-blur-xl"
+              ? "rounded-full border border-[#d8d4ca] bg-[#fffdf8]/90 py-3 shadow-[0_8px_24px_rgba(22,32,25,0.08)] backdrop-blur-xl"
               : "py-2"
           )}
         >
@@ -72,11 +72,11 @@ export default function Navbar() {
             }}
             className="group flex items-center gap-2"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-sm font-bold text-white shadow-lg shadow-indigo-500/25">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#162019] text-xs font-bold tracking-tight text-[#d7ff69]">
               HC
             </span>
-            <span className="hidden text-sm font-semibold text-white sm:block">
-              Harsh<span className="text-indigo-400">.</span>
+            <span className="hidden text-sm font-semibold text-[#162019] sm:block">
+              Harsh<span className="text-[#0e6b4f]">.</span>
             </span>
           </a>
 
@@ -92,8 +92,8 @@ export default function Navbar() {
                   className={cn(
                     "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                     activeSection === link.href.slice(1)
-                      ? "bg-indigo-500/20 text-indigo-300"
-                      : "text-zinc-400 hover:text-white"
+                      ? "bg-[#e7efe5] text-[#0e6b4f]"
+                      : "text-[#5d655e] hover:text-[#162019]"
                   )}
                 >
                   {link.label}
@@ -108,14 +108,14 @@ export default function Navbar() {
               e.preventDefault();
               handleNavClick("#contact");
             }}
-            className="hidden rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40 lg:inline-block"
+            className="hidden rounded-full bg-[#162019] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[#0e6b4f] lg:inline-block"
           >
             Contact Me
           </a>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-white/5 hover:text-white lg:hidden"
+            className="rounded-lg p-2 text-[#5d655e] transition-colors hover:bg-[#e7efe5] hover:text-[#162019] lg:hidden"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -129,7 +129,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="fixed inset-x-4 top-20 z-40 rounded-2xl border border-white/10 bg-zinc-950/95 p-4 shadow-2xl backdrop-blur-xl lg:hidden"
+            className="fixed inset-x-4 top-20 z-40 rounded-2xl border border-[#d8d4ca] bg-[#fffdf8]/95 p-4 shadow-2xl backdrop-blur-xl lg:hidden"
           >
             <ul className="space-y-1">
               {navLinks.map((link) => (
@@ -143,8 +143,8 @@ export default function Navbar() {
                     className={cn(
                       "block rounded-lg px-4 py-3 text-sm font-medium transition-colors",
                       activeSection === link.href.slice(1)
-                        ? "bg-indigo-500/20 text-indigo-300"
-                        : "text-zinc-400 hover:bg-white/5 hover:text-white"
+                        ? "bg-[#e7efe5] text-[#0e6b4f]"
+                        : "text-[#5d655e] hover:bg-[#e7efe5] hover:text-[#162019]"
                     )}
                   >
                     {link.label}
@@ -158,7 +158,7 @@ export default function Navbar() {
                 e.preventDefault();
                 handleNavClick("#contact");
               }}
-              className="mt-3 block rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-4 py-3 text-center text-sm font-semibold text-white"
+              className="mt-3 block rounded-xl bg-[#162019] px-4 py-3 text-center text-sm font-semibold text-white"
             >
               Contact Me
             </a>

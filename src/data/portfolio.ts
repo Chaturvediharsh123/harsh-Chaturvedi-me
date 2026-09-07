@@ -75,6 +75,22 @@ export const portfolioData: PortfolioData = {
   ],
   experiences: [
     {
+      id: "exp-0",
+      role: "AI/ML Intern",
+      organization: "HabileLabs",
+      period: "May 2026 — July 2026",
+      description:
+        "Built an AI-powered HR assistant using RAG to give employees context-aware answers from HR policies and internal documents. Delivered the end-to-end workflow, from document ingestion and embeddings to retrieval, prompt construction, and LLM responses.",
+      technologies: [
+        "LangChain",
+        "Hugging Face",
+        "ChromaDB",
+        "FastAPI",
+        "PostgreSQL",
+        "Redis",
+      ],
+    },
+    {
       id: "exp-1",
       role: "B.Tech Artificial Intelligence Student",
       organization: "Birla Institute of Technology, Mesra",

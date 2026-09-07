@@ -48,7 +48,7 @@ export default function TypingEffect({ phrases, className = "" }: TypingEffectPr
       <motion.span
         animate={{ opacity: [1, 0] }}
         transition={{ duration: 0.6, repeat: Infinity }}
-        className="ml-0.5 inline-block h-[1em] w-0.5 bg-indigo-400 align-middle"
+        className="ml-0.5 inline-block h-[1em] w-0.5 bg-[#0e6b4f] align-middle"
       />
     </span>
   );

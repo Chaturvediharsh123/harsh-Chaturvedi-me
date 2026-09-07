@@ -51,12 +51,12 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative py-24 md:py-32">
+    <section id="contact" className="relative py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeader
           label="Contact"
-          title="Let's Build Something Intelligent"
-          description="Open to AI engineering roles, internships, and collaboration on impactful projects"
+          title="Let’s make something useful."
+          description="Open to AI engineering roles, internships, and thoughtful collaboration."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">
@@ -73,24 +73,24 @@ export default function Contact() {
                     href={item.href}
                     target={item.href.startsWith("http") ? "_blank" : undefined}
                     rel="noopener noreferrer"
-                    className="flex items-center gap-4 transition-colors hover:text-indigo-300"
+                    className="flex items-center gap-4 transition-colors hover:text-[#0e6b4f]"
                   >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-500/20 text-indigo-400">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e7efe5] text-[#0e6b4f]">
                       <item.icon size={20} />
                     </div>
                     <div>
-                      <p className="text-xs text-zinc-500">{item.label}</p>
-                      <p className="font-medium text-white">{item.value}</p>
+                      <p className="text-xs text-[#5d655e]">{item.label}</p>
+                      <p className="font-medium text-[#162019]">{item.value}</p>
                     </div>
                   </a>
                 ) : (
                   <div className="flex items-center gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-500/20 text-indigo-400">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#e7efe5] text-[#0e6b4f]">
                       <item.icon size={20} />
                     </div>
                     <div>
-                      <p className="text-xs text-zinc-500">{item.label}</p>
-                      <p className="font-medium text-white">{item.value}</p>
+                      <p className="text-xs text-[#5d655e]">{item.label}</p>
+                      <p className="font-medium text-[#162019]">{item.value}</p>
                     </div>
                   </div>
                 )}
@@ -110,7 +110,7 @@ export default function Contact() {
                   <div>
                     <label
                       htmlFor="name"
-                      className="mb-2 block text-sm font-medium text-zinc-400"
+                      className="mb-2 block text-sm font-medium text-[#4e574f]"
                     >
                       Name
                     </label>
@@ -122,14 +122,14 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormState({ ...formState, name: e.target.value })
                       }
-                      className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-zinc-600 outline-none transition-colors focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30"
+                      className="w-full rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] px-4 py-3 text-[#162019] placeholder-[#899088] outline-none transition-colors focus:border-[#0e6b4f] focus:ring-1 focus:ring-[#0e6b4f]/20"
                       placeholder="Your name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="email"
-                      className="mb-2 block text-sm font-medium text-zinc-400"
+                      className="mb-2 block text-sm font-medium text-[#4e574f]"
                     >
                       Email
                     </label>
@@ -141,7 +141,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormState({ ...formState, email: e.target.value })
                       }
-                      className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-zinc-600 outline-none transition-colors focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30"
+                      className="w-full rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] px-4 py-3 text-[#162019] placeholder-[#899088] outline-none transition-colors focus:border-[#0e6b4f] focus:ring-1 focus:ring-[#0e6b4f]/20"
                       placeholder="you@email.com"
                     />
                   </div>
@@ -150,7 +150,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="mb-2 block text-sm font-medium text-zinc-400"
+                    className="mb-2 block text-sm font-medium text-[#4e574f]"
                   >
                     Message
                   </label>
@@ -162,14 +162,14 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormState({ ...formState, message: e.target.value })
                     }
-                    className="w-full resize-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-zinc-600 outline-none transition-colors focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30"
+                    className="w-full resize-none rounded-xl border border-[#d8d4ca] bg-[#f4f1ea] px-4 py-3 text-[#162019] placeholder-[#899088] outline-none transition-colors focus:border-[#0e6b4f] focus:ring-1 focus:ring-[#0e6b4f]/20"
                     placeholder="Tell me about your project or opportunity..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/25 transition-all hover:shadow-indigo-500/40 sm:w-auto"
+                  className="group flex w-full items-center justify-center gap-2 rounded-full bg-[#162019] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[#0e6b4f] sm:w-auto"
                 >
                   <Send
                     size={18}
