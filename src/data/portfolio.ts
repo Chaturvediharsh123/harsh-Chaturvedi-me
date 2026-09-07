@@ -41,6 +41,7 @@ export const portfolioData: PortfolioData = {
         { name: "RAG", level: 92 },
         { name: "AI Agents", level: 90 },
         { name: "Prompt Engineering", level: 88 },
+        { name: "Groq", level: 82 },
       ],
     },
     {
@@ -70,6 +71,7 @@ export const portfolioData: PortfolioData = {
         { name: "GitHub", level: 92 },
         { name: "Jupyter Notebook", level: 88 },
         { name: "Docker", level: 78 },
+        { name: "Kotlin", level: 70 },
       ],
     },
   ],

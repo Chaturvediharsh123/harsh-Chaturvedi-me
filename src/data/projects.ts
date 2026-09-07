@@ -4,6 +4,24 @@ const GITHUB_BASE = "https://github.com/Chaturvediharsh123";
 
 export const projects: Project[] = [
   {
+    id: "ai-powered-hr-assistant",
+    title: "AI-Powered HR Assistant",
+    description:
+      "AI-powered employee management system with RAG chat over HR documents, employee records, and policy knowledge. Combines FastAPI, PostgreSQL, Redis, ChromaDB, Groq, and Streamlit into one practical workflow.",
+    technologies: [
+      "RAG",
+      "LangChain",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "ChromaDB",
+    ],
+    githubUrl: `${GITHUB_BASE}/AI-Powered-HR-Assistant`,
+    stars: 0,
+    language: "Python",
+    featured: true,
+  },
+  {
     id: "usagi-ai",
     title: "Usagi AI — Helmet & Plate Detection",
     description:
@@ -114,17 +132,6 @@ export const projects: Project[] = [
     githubUrl: `${GITHUB_BASE}/AI-Based-Cardiovascular-Risk-Predictor`,
     stars: 0,
     language: "Python",
-    featured: false,
-  },
-  {
-    id: "agent-commerce",
-    title: "AgentCommerce",
-    description:
-      "AI-powered commerce platform leveraging agentic AI for intelligent product discovery, recommendations, and automated customer interactions.",
-    technologies: ["JavaScript", "AI Agents", "Web Development"],
-    githubUrl: `${GITHUB_BASE}/AgentCommerce`,
-    stars: 0,
-    language: "JavaScript",
     featured: false,
   },
   {

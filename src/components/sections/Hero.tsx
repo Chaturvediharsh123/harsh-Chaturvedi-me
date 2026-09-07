@@ -26,7 +26,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="order-2 lg:order-1"
+          className="order-2 min-w-0 w-full lg:order-1"
         >
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -42,7 +42,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="display-type max-w-3xl text-5xl font-bold leading-[0.88] text-[#162019] md:text-6xl lg:text-7xl"
+            className="display-type max-w-3xl break-words text-5xl font-bold leading-[0.88] text-[#162019] md:text-6xl lg:text-7xl"
           >
             I build AI systems that solve real problems.
           </motion.h1>
@@ -87,11 +87,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75 }}
-            className="mt-8 flex flex-wrap items-center gap-3"
+            className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:items-center"
           >
             <a
               href="#projects"
-              className="group flex items-center gap-2 rounded-full bg-[#162019] px-6 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[#0e6b4f]"
+              className="group col-span-2 flex items-center justify-center gap-2 rounded-full bg-[#162019] px-5 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[#0e6b4f] sm:col-span-1"
             >
               <ArrowUpRight size={18} className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               Explore selected work
@@ -100,7 +100,7 @@ export default function Hero() {
               href={portfolioData.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-5 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f]"
+              className="flex items-center justify-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-4 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f] sm:px-5"
             >
               <Github size={18} />
               GitHub
@@ -109,14 +109,14 @@ export default function Hero() {
               href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-5 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f]"
+              className="flex items-center justify-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-4 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f] sm:px-5"
             >
               <Download size={17} />
               Résumé
             </a>
             <button
               onClick={scrollToContact}
-              className="flex items-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-5 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f]"
+              className="flex items-center justify-center gap-2 rounded-full border border-[#bcb7ac] bg-[#fffdf8]/70 px-4 py-3.5 text-sm font-semibold text-[#162019] transition-all hover:border-[#0e6b4f] sm:px-5"
             >
               <Mail size={18} />
               Contact
@@ -135,9 +135,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="order-1 flex justify-center lg:order-2"
+          className="order-1 flex min-w-0 w-full justify-center lg:order-2"
         >
-          <div className="relative w-full max-w-sm">
+          <div className="relative w-full max-w-sm min-w-0">
             <div className="absolute -right-4 -top-4 h-full w-full rounded-[2rem] border border-[#0e6b4f]/25" />
             <div className="mobile-float relative overflow-hidden rounded-[2rem] border border-[#d8d4ca] bg-[#162019] p-3 shadow-[16px_16px_0_#d7ff69]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.45rem] bg-[#d7ff69]">
