@@ -67,3 +67,16 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .mobile-float { animation: none; }
 }
+
+@keyframes mobile-ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 767px) {
+  .mobile-ticker-track { animation: mobile-ticker 18s linear infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-ticker-track { animation: none; }
+}

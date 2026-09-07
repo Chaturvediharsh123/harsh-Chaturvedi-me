@@ -1,8 +1,8 @@
 import {
+  BrainCircuit,
   BookOpen,
-  GitFork,
-  Star,
-  Users,
+  GraduationCap,
+  Trophy,
 } from "lucide-react";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -15,15 +15,15 @@ export default async function GitHubStats() {
   const statItems = stats
     ? [
         { label: "Public Repos", value: stats.publicRepos, icon: BookOpen },
-        { label: "Total Stars", value: stats.totalStars, icon: Star },
-        { label: "Followers", value: stats.followers, icon: Users },
-        { label: "Following", value: stats.following, icon: GitFork },
+        { label: "AI Builds", value: 20, icon: BrainCircuit },
+        { label: "Hackathon Awards", value: 7, icon: Trophy },
+        { label: "CGPA", value: 8.5, icon: GraduationCap },
       ]
     : [
         { label: "Public Repos", value: 25, icon: BookOpen },
-        { label: "Total Stars", value: 4, icon: Star },
-        { label: "Followers", value: 4, icon: Users },
-        { label: "Following", value: 5, icon: GitFork },
+        { label: "AI Builds", value: 20, icon: BrainCircuit },
+        { label: "Hackathon Awards", value: 7, icon: Trophy },
+        { label: "CGPA", value: 8.5, icon: GraduationCap },
       ];
 
   return (
@@ -31,8 +31,8 @@ export default async function GitHubStats() {
       <div className="relative mx-auto max-w-6xl px-4 md:px-6">
         <SectionHeader
           label="GitHub"
-          title="Making the work visible."
-          description={`Live statistics from @${GITHUB_USERNAME}`}
+          title="Proof, not just promises."
+          description="A snapshot of the work, milestones, and consistency behind the portfolio."
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

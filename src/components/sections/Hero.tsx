@@ -122,6 +122,13 @@ export default function Hero() {
               Contact
             </button>
           </motion.div>
+
+          <div className="mobile-ticker mt-7 overflow-hidden border-y border-[#d8d4ca] py-3 md:hidden">
+            <div className="mobile-ticker-track flex w-max items-center gap-5 whitespace-nowrap font-mono text-[10px] font-bold uppercase tracking-[0.18em] text-[#0e6b4f]">
+              <span>RAG systems</span><i>✦</i><span>Computer vision</span><i>✦</i><span>AI agents</span><i>✦</i><span>FastAPI</span><i>✦</i>
+              <span>RAG systems</span><i>✦</i><span>Computer vision</span><i>✦</i><span>AI agents</span><i>✦</i><span>FastAPI</span><i>✦</i>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div

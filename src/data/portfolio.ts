@@ -80,7 +80,7 @@ export const portfolioData: PortfolioData = {
       organization: "HabileLabs",
       period: "May 2026 — July 2026",
       description:
-        "Built an AI-powered HR assistant using RAG to give employees context-aware answers from HR policies and internal documents. Delivered the end-to-end workflow, from document ingestion and embeddings to retrieval, prompt construction, and LLM responses.",
+        "Built an AI-powered HR assistant that answers questions from company policies and employee documents. Connected ingestion, embeddings, retrieval, prompting, and LLM responses into one workflow.",
       technologies: [
         "LangChain",
         "Hugging Face",
@@ -96,7 +96,7 @@ export const portfolioData: PortfolioData = {
       organization: "Birla Institute of Technology, Mesra",
       period: "2023 — Present",
       description:
-        "Pursuing undergraduate degree in Artificial Intelligence with focus on machine learning, computer vision, agentic AI systems, and intelligent backend development. Building production-grade AI applications through coursework and independent projects.",
+        "B.Tech student focused on machine learning, computer vision, agentic AI, and intelligent backend development.",
       technologies: ["Python", "TensorFlow", "FastAPI", "LangChain", "YOLOv8"],
     },
     {
@@ -105,7 +105,7 @@ export const portfolioData: PortfolioData = {
       organization: "MemoriLabs, NousResearch, Unsloth, Exo",
       period: "2025 — Present",
       description:
-        "Contributing to open-source AI infrastructure and agent frameworks including Memori (agent-native memory), Hermes Agent, Unsloth, and Exo. Gaining hands-on experience with production LLM systems and agent orchestration.",
+        "Contributing to AI infrastructure and agent frameworks including Memori, Hermes Agent, Unsloth, and Exo.",
       technologies: ["Python", "LLMs", "Agent Frameworks", "Git"],
     },
     {
@@ -114,7 +114,7 @@ export const portfolioData: PortfolioData = {
       organization: "Independent Projects",
       period: "2024 — Present",
       description:
-        "Designed and deployed 20+ AI applications spanning RAG agents, computer vision systems, healthcare prediction models, and multi-agent platforms. Built end-to-end pipelines from data processing to deployment with FastAPI and Streamlit.",
+        "Designed 20+ AI applications across RAG, computer vision, healthcare, and multi-agent systems using FastAPI and Streamlit.",
       technologies: [
         "LangChain",
         "FastAPI",
