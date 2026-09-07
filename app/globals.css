@@ -54,3 +54,16 @@ body {
 
 .display-type { letter-spacing: -0.065em; }
 .paper-card { background: rgba(255, 253, 248, 0.78); }
+
+@keyframes mobile-float {
+  0%, 100% { transform: translateY(0) rotate(0deg); box-shadow: 12px 12px 0 #d7ff69; }
+  50% { transform: translateY(-8px) rotate(0.7deg); box-shadow: 16px 18px 0 #d7ff69; }
+}
+
+@media (max-width: 767px) {
+  .mobile-float { animation: mobile-float 5s ease-in-out infinite; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-float { animation: none; }
+}

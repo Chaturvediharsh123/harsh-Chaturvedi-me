@@ -132,13 +132,13 @@ export default function Hero() {
         >
           <div className="relative w-full max-w-sm">
             <div className="absolute -right-4 -top-4 h-full w-full rounded-[2rem] border border-[#0e6b4f]/25" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-[#d8d4ca] bg-[#162019] p-3 shadow-[16px_16px_0_#d7ff69]">
+            <div className="mobile-float relative overflow-hidden rounded-[2rem] border border-[#d8d4ca] bg-[#162019] p-3 shadow-[16px_16px_0_#d7ff69]">
               <div className="relative aspect-[4/5] overflow-hidden rounded-[1.45rem] bg-[#d7ff69]">
                 <Image
                   src="/profile.jpeg"
                   alt={portfolioData.name}
                   fill
-                  className="object-cover grayscale transition duration-700 hover:grayscale-0"
+                  className="object-cover grayscale-0 transition duration-700 md:grayscale hover:grayscale-0"
                   priority
                 />
               </div>

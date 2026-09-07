@@ -8,10 +8,12 @@ import Projects from "@/components/sections/Projects";
 import Achievements from "@/components/sections/Achievements";
 import GitHubStats from "@/components/sections/GitHubStats";
 import Contact from "@/components/sections/Contact";
+import CursorFollower from "@/components/ui/CursorFollower";
 
 export default function Home() {
   return (
     <>
+      <CursorFollower />
       <div className="relative min-h-screen">
         <Navbar />
         <main>
